@@ -2,6 +2,7 @@
 
 import { styxtech } from "@/public/Assets/icons";
 import { useState } from "react";
+import { getImagePath } from "../utils/basePath";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -95,7 +96,7 @@ export default function Footer() {
           {/* Logo and Social Links */}
           <div>
             <img
-              src="/images/Finalized color-02.png"
+              src={getImagePath("/images/Finalized color-02.png")}
               alt="Styxtech Systems Logo"
               className="w-full max-w-[280px] h-auto object-contain brightness-110 -mb-8"
             />

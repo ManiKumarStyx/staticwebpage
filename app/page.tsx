@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import WorldMapSVG from "./components/WorldMapSVG";
 import { styxtech, customSolutionsIcon, accurateInfrasructure, itinfrastructure, cloudfirst, security, workplaceenvironment, endusersupportservice, networkAutomation, Digitaworkspace} from "@/public/Assets/icons";
+import { getImagePath } from "./utils/basePath";
 
 export default function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
@@ -129,7 +130,7 @@ export default function Home() {
             {/* Center Logo */}
             <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <img
-                src="/images/Finalized color-02.png"
+                src={getImagePath("/images/Finalized color-02.png")}
                 alt="Styxtech Systems Logo"
                 className="object-contain"
                 style={{ height: '170px', width: 'auto', marginTop:'20%' }}
@@ -263,7 +264,7 @@ export default function Home() {
 
           <div className="flex items-center justify-center">
             <Image
-              src="/images/Frame 45.png"
+              src={getImagePath("/images/Frame 45.png")}
               alt="Our Trusted Partners"
               width={1400}
               height={165}
@@ -388,7 +389,7 @@ export default function Home() {
             {/* Left Side - Image */}
             <div className="relative bg-gradient-to-br from-[#2a3a3a] via-[#1a2a2a] to-[#0f1f1f] p-8 flex items-center justify-center min-h-[600px]">
               <Image
-                src="/images/aboutus.png"
+                src={getImagePath("/images/aboutus.png")}
                 alt="IT Infrastructure Server"
                 width={500}
                 height={500}
@@ -469,7 +470,7 @@ export default function Home() {
             {/* Left Side - Automotive Engine Image */}
             <div className="relative bg-black h-full">
               <Image
-                src="/images/automotive.png"
+                src={getImagePath("/images/automotive.png")}
                 alt="Automotive Engine"
                 width={700}
                 height={600}
@@ -495,7 +496,7 @@ export default function Home() {
         <section className="w-full bg-black fade-in-section">
           <div className="max-w-[1400px] mx-auto px-6 py-20">
             <Image
-              src="/images/achievementsfull.png"
+              src={getImagePath("/images/achievementsfull.png")}
               alt="Achievements and Certifications"
               width={1400}
               height={400}
@@ -901,7 +902,7 @@ export default function Home() {
               {/* Logo and Social Links */}
               <div>
                 <img
-                  src="/images/Finalized color-02.png"
+                  src={getImagePath("/images/Finalized color-02.png")}
                   alt="Styxtech Systems Logo"
                   className="w-full max-w-[280px] h-auto object-contain brightness-110 -mb-8"
                 />

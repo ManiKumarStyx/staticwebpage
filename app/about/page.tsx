@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { fueling, testimonals } from "@/public/Assets/icons";
 import Footer from "../components/Footer";
+import { getImagePath } from "../utils/basePath";
 
 export default function About() {
   return (
@@ -29,7 +30,7 @@ export default function About() {
             <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <Link href="/">
                 <img
-                  src="/images/Finalized color-02.png"
+                  src={getImagePath("/images/Finalized color-02.png")}
                   alt="Styxtech Systems Logo"
                   className="object-contain"
                   style={{ height: '170px', width: 'auto', marginTop:'20%' }}
@@ -96,7 +97,7 @@ export default function About() {
         <section className="max-w-[1400px] mx-auto px-6 py-12">
           <div className="flex items-center justify-center">
             <Image
-              src="/images/logos.png"
+              src={getImagePath("/images/logos.png")}
               alt="Our Trusted Partners"
               width={1400}
               height={165}
@@ -129,7 +130,7 @@ export default function About() {
           {/* Meeting Image */}
           <div className="mt-12 rounded-3xl overflow-hidden">
             <Image
-              src="/images/meeting.png"
+              src={getImagePath("/images/meeting.png")}
               alt="Team Meeting"
               width={1400}
               height={600}
@@ -143,7 +144,7 @@ export default function About() {
           <div className="max-w-[1400px] mx-auto px-6">
             <div className="relative rounded-3xl overflow-hidden">
               <img
-                src="/images/ourvisonmission.png"
+                src={getImagePath("/images/ourvisonmission.png")}
                 alt="Our Vision and Mission"
                 className="w-full h-auto object-cover"
               />
@@ -200,7 +201,7 @@ export default function About() {
               <div className="absolute top-[320px] left-[5%] transform rotate-[-25deg] z-10">
                 <div className="w-[160px] h-[195px] rounded-[24px] shadow-2xl bg-[#3a6565] overflow-hidden">
                   <img
-                    src="/images/team/member-1.jpg"
+                    src={getImagePath("/images/team/member-1.jpg")}
                     alt=""
                     className="w-full h-full object-cover"
                   />
@@ -211,7 +212,7 @@ export default function About() {
               <div className="absolute top-[130px] left-[14%] transform rotate-[-15deg] z-11">
                 <div className="w-[160px] h-[195px] rounded-[24px] shadow-2xl bg-[#4a7a7a] overflow-hidden">
                   <img
-                    src="/images/team/member-2.jpg"
+                    src={getImagePath("/images/team/member-2.jpg")}
                     alt=""
                     className="w-full h-full object-cover"
                   />
@@ -222,7 +223,7 @@ export default function About() {
               <div className="absolute top-[100px] left-[28%] transform rotate-[-8deg] z-12">
                 <div className="w-[160px] h-[195px] rounded-[24px] shadow-2xl bg-[#a0826a] overflow-hidden">
                   <img
-                    src="/images/team/member-3.jpg"
+                    src={getImagePath("/images/team/member-3.jpg")}
                     alt=""
                     className="w-full h-full object-cover"
                   />
@@ -233,7 +234,7 @@ export default function About() {
               <div className="absolute z-20 top-[40px] left-1/2 transform -translate-x-1/2">
                 <div className="w-[190px] h-[240px] rounded-[24px] shadow-2xl bg-[#dcdcdc] overflow-hidden">
                   <img
-                    src="/images/team/member-center.jpg"
+                    src={getImagePath("/images/team/member-center.jpg")}
                     alt="John Henry"
                     className="w-full h-full object-cover"
                   />
@@ -244,7 +245,7 @@ export default function About() {
               <div className="absolute top-[100px] right-[28%] transform rotate-[8deg] z-12">
                 <div className="w-[160px] h-[195px] rounded-[24px] shadow-2xl bg-[#d9c65f] overflow-hidden">
                   <img
-                    src="/images/team/member-4.jpg"
+                    src={getImagePath("/images/team/member-4.jpg")}
                     alt=""
                     className="w-full h-full object-cover"
                   />
@@ -255,7 +256,7 @@ export default function About() {
               <div className="absolute top-[130px] right-[14%] transform rotate-[15deg] z-11">
                 <div className="w-[160px] h-[195px] rounded-[24px] shadow-2xl bg-[#ebebeb] overflow-hidden">
                   <img
-                    src="/images/team/member-5.jpg"
+                    src={getImagePath("/images/team/member-5.jpg")}
                     alt=""
                     className="w-full h-full object-cover"
                   />
@@ -266,7 +267,7 @@ export default function About() {
               <div className="absolute top-[320px] right-[5%] transform rotate-[25deg] z-10">
                 <div className="w-[160px] h-[195px] rounded-[24px] shadow-2xl bg-[#51c0a8] overflow-hidden">
                   <img
-                    src="/images/team/member-6.jpg"
+                    src={getImagePath("/images/team/member-6.jpg")}
                     alt=""
                     className="w-full h-full object-cover"
                   />

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Footer from "../components/Footer";
 import { projectgoals } from "@/public/Assets/icons";
+import { getImagePath } from "../utils/basePath";
 
 export default function CaseStudies() {
   return (
@@ -28,7 +29,7 @@ export default function CaseStudies() {
             <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <Link href="/">
                 <img
-                  src="/images/Finalized color-02.png"
+                  src={getImagePath("/images/Finalized color-02.png")}
                   alt="Styxtech Systems Logo"
                   className="object-contain"
                   style={{ height: '170px', width: 'auto', marginTop:'20%' }}
@@ -83,7 +84,7 @@ export default function CaseStudies() {
           {/* Background Image */}
           <div className="absolute inset-0">
             <img
-              src="/images/leadingamerican.png"
+              src={getImagePath("/images/leadingamerican.png")}
               alt="Leading American Manufacturer"
               className="w-full h-full object-cover"
             />
@@ -261,7 +262,7 @@ export default function CaseStudies() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden shadow-2xl">
                   <img
-                    src="/images/valuedifferenciation.png"
+                    src={getImagePath("/images/valuedifferenciation.png")}
                     alt="Industrial Manufacturing Equipment"
                     className="w-full h-full object-cover"
                   />
@@ -295,7 +296,7 @@ export default function CaseStudies() {
               <div className="group cursor-pointer">
                 <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
                   <img
-                    src="/images/globalfashonretailer.png"
+                    src={getImagePath("/images/globalfashonretailer.png")}
                     alt="Global Fashion Retail Giant"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -324,7 +325,7 @@ export default function CaseStudies() {
               <div className="group cursor-pointer">
                 <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3]">
                   <img
-                    src="/images/leadingindustries.png"
+                    src={getImagePath("/images/leadingindustries.png")}
                     alt="Leading Industrial Pump Manufacturer in Shanghai"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />

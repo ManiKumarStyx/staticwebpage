@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { sucessstories } from "@/public/Assets/icons";
 import Footer from "../components/Footer";
+import { getImagePath } from "../utils/basePath";
 
 export default function SuccessStories() {
   return (
@@ -28,7 +29,7 @@ export default function SuccessStories() {
             <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <Link href="/">
                 <img
-                  src="/images/Finalized color-02.png"
+                  src={getImagePath("/images/Finalized color-02.png")}
                   alt="Styxtech Systems Logo"
                   className="object-contain"
                   style={{ height: '170px', width: 'auto', marginTop:'20%' }}
@@ -103,7 +104,7 @@ export default function SuccessStories() {
         <section className="max-w-[1400px] mx-auto px-6 py-12">
           <div className="flex items-center justify-center">
             <img
-              src="/images/logos.png"
+              src={getImagePath("/images/logos.png")}
               alt="Our Trusted Partners"
               width={1400}
               height={165}
@@ -120,7 +121,7 @@ export default function SuccessStories() {
               {/* Image */}
               <div className="relative h-[300px] overflow-hidden">
                 <img
-                  src="/images/globalfashonretailer.png"
+                  src={getImagePath("/images/globalfashonretailer.png")}
                   alt="Global Fashion Retail Giant"
                   className="w-full h-full object-cover"
                 />
@@ -175,7 +176,7 @@ export default function SuccessStories() {
               {/* Background Image */}
               <div className="relative h-[550px]">
                 <img
-                  src="/images/leadingamerican.png"
+                  src={getImagePath("/images/leadingamerican.png")}
                   alt="Leading American Manufacturer"
                   className="w-full h-full object-cover"
                 />
@@ -205,7 +206,7 @@ export default function SuccessStories() {
               {/* Background Image */}
               <div className="relative h-[550px]">
                 <img
-                  src="/images/leadingindustries.png"
+                  src={getImagePath("/images/leadingindustries.png")}
                   alt="Leading Industrial Pump Manufacturer in Shanghai"
                   className="w-full h-full object-cover"
                 />

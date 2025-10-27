@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { servicespage } from "@/public/Assets/icons";
 import Footer from "../components/Footer";
+import { getImagePath } from "../utils/basePath";
 
 export default function Services() {
   const [selectedDate, setSelectedDate] = useState<number>(15);
@@ -97,7 +98,7 @@ export default function Services() {
             <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <Link href="/">
                 <img
-                  src="/images/Finalized color-02.png"
+                  src={getImagePath("/images/Finalized color-02.png")}
                   alt="Styxtech Systems Logo"
                   className="object-contain"
                   style={{ height: '170px', width: 'auto', marginTop:'20%' }}
